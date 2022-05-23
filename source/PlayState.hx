@@ -393,7 +393,7 @@ class PlayState extends MusicBeatState
 					stageLight.flipX = true;
 					add(stageLight);
 
-					var :BGSprite = new BGSprite('pillare', -500, -300, 1.3, 1.3);
+					var stageCurtains:BGSprite = new BGSprite('pillare', -500, -300, 1.3, 1.3);
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 					stageCurtains.updateHitbox();
 					add(stageCurtains);
