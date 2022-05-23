@@ -415,8 +415,7 @@ class PlayState extends MusicBeatState
 				 var Pillars:BGSprite = new BGSprite('pillars', -240, -630, 0.9, 0.9);
 					Pillars.setGraphicSize(Std.int(Pillars.width * 1.5));
 					add(Pillars);
-		}
-
+					
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
 					halloweenBG = new BGSprite('halloween_bg', -200, -100, ['halloweem bg0', 'halloweem bg lightning strike']);
