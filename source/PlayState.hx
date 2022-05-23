@@ -208,6 +208,11 @@ class PlayState extends MusicBeatState
 	var grpLimoParticles:FlxTypedGroup<BGSprite>;
 	var grpLimoDancers:FlxTypedGroup<BackgroundDancer>;
 	var fastCar:BGSprite;
+	
+	var Pillars:BGSprite;
+	var pillarbrok:BGSprite;
+	var floorcorrupted:BGSprite;
+	var bgcorrupted:BGSprite;
 
 	var upperBoppers:BGSprite;
 	var bottomBoppers:BGSprite;
@@ -388,11 +393,29 @@ class PlayState extends MusicBeatState
 					stageLight.flipX = true;
 					add(stageLight);
 
-					var stageCurtains:BGSprite = new BGSprite('stagecurtains', -500, -300, 1.3, 1.3);
+					var :BGSprite = new BGSprite('pillare', -500, -300, 1.3, 1.3);
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 					stageCurtains.updateHitbox();
 					add(stageCurtains);
 				}
+				
+			case 'churchRuin': //Ruv Alt
+				var bgcorrupted:BGSprite = new BGSprite('bg', -240, -630);
+				bgcorrupted.setGraphicSize(Std.int(bgcorrupted.width * 1.1));
+				add(bgcorrupted);
+
+				var floorcorrupted:BGSprite = new BGSprite('floor', -240, -630);
+				floorcorrupted.setGraphicSize(Std.int(floorcorrupted.width * 1.1));
+				add(floorcorrupted);
+				
+				var pillas:BGSprite = new BGSprite('pillars', -240, -630);
+					pillas.setGraphicSize(Std.int(pillas.width * 1.1));
+					add(pillas);
+				
+				 var Pillars:BGSprite = new BGSprite('pillars', -240, -630, 0.9, 0.9);
+					Pillars.setGraphicSize(Std.int(Pillars.width * 1.5));
+					add(Pillars);
+		}
 
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
