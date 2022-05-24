@@ -1,0 +1,25 @@
+{
+	"storyName": "??? ??? ???",
+	"hideFreeplay": false,
+	"weekBackground": "selever",
+	"weekBefore": "week7",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"bf2",
+		""
+	],
+	"songs": [
+		[
+			"zavoglitch",
+			"ruv",
+			[
+				20,
+				20,
+				20
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Week8"
+}
