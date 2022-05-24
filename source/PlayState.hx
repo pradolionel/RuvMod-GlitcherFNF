@@ -408,7 +408,7 @@ class PlayState extends MusicBeatState
 				floorcorrupted.setGraphicSize(Std.int(floorcorrupted.width * 1.1));
 				add(floorcorrupted);
 				
-				var pillarbrok:BGSprite = new BGSprite('church/pillarbroke', -240, -630);
+				var pillarbrok:BGSprite = new BGSprite('church/pillarbroke', -240, -600, 0.9, 0.9);
 					pillarbrok.setGraphicSize(Std.int(pillarbrok.width * 1.1));
 					add(pillarbrok);
 				
@@ -773,6 +773,9 @@ class PlayState extends MusicBeatState
 			case 'schoolEvil':
 				var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069); //nice
 				insert(members.indexOf(dadGroup) - 1, evilTrail);
+
+			case 'churchRuin':
+				gf.alpha = 0;
 		}
 
 		var file:String = Paths.json(songName + '/dialogue'); //Checks for json/Psych Engine dialogue
