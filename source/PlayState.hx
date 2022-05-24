@@ -408,7 +408,7 @@ class PlayState extends MusicBeatState
 				floorcorrupted.setGraphicSize(Std.int(floorcorrupted.width * 1.1));
 				add(floorcorrupted);
 				
-				var pillarbrok:BGSprite = new BGSprite('church/pillarbroke', -240, -600, 0.9, 0.9);
+				var pillarbrok:BGSprite = new BGSprite('church/pillarbroke', -240, -665, 0.9, 0.9);
 					pillarbrok.setGraphicSize(Std.int(pillarbrok.width * 1.1));
 					add(pillarbrok);
 				
