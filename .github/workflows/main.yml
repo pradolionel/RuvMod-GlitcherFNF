@@ -14,6 +14,7 @@ jobs:
           distribution: temurin
           java-version: 11
       - uses: nttld/setup-ndk@main
+        id: setup-ndk
         with:
           ndk-version: r21e
       - name: script run line haha
