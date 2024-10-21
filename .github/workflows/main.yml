@@ -37,9 +37,9 @@ jobs:
           haxelib run lime config ANDROID_NDK_ROOT ${{ steps.setup-ndk.outputs.ndk-path }}
           haxelib run lime config JAVA_HOME $JAVA_HOME
           haxelib run lime config ANDROID_SETUP true
-          haxelib run lime build android
           haxelib install actuate 
           haxelib list
+          haxelib run lime build android
       - uses: actions/upload-artifact@main
         with:
           name: push
